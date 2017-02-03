@@ -7,7 +7,12 @@ A template Gulp task for theme/plugin development in WordPress.
 Do not clone this repository. We have shell commmand to install files.
 
 ```
-wget -O - 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/installer.sh' | bash
+# Download it
+wget -q 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/installer.sh'
+# Execute it
+bash installer.sh
+# Remove it
+rm installer.sh
 ```
 
 Copy this command and paste to your terminal.
