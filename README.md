@@ -50,6 +50,37 @@ YOUR_DIR
     └scss
 ```
 
+### Storefront Child
+
+Child theme for [Storefront](https://wordpress.org/themes/storefront/).
+
+Besides `simple`'s structure...
+
+- Libraries and images are copied to your assets folder
+- SCSS include path are overrapped with Storefront.
+
+
+```
+YOUR_DIR
+├.jshintrc
+│
+├assets
+│  ├fonts
+│  ├img
+│  ├js
+│  └css
+│
+├gulpfile.js
+│
+├package.json
+│
+└src
+    ├img
+    ├js
+    └scss
+```
+
+
 ## License
 
 GPL 3.0 or later.
