@@ -1,5 +1,5 @@
 {
-  "name": "your-task",
+  "name": "storefront-child",
   "version": "0.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp build && gulp watch",
     "watch": "gulp watch",
+    "build": "gulp build",
     "gulp": "gulp"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "homepage": "",
   "devDependencies": {
+    "bourbon": "^4.3.3",
     "event-stream": "^3.3.4",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
@@ -40,6 +42,7 @@
     "gulp-util": "^3.0.8",
     "imagemin-pngquant": "^5.0.0",
     "jshint": "^2.9.4",
-    "jshint-stylish": "^2.2.1"
+    "jshint-stylish": "^2.2.1",
+    "susy": "^2.2.12"
   }
 }

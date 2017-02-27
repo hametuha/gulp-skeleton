@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-echo 'Please select 1 option:'
+echo "Please select 1 option:"
 echo "---------------"
 echo "1. Simple"
+echo "2. StoreFront Child"
 echo "---------------"
 echo -n "Your Choice:"
 
@@ -13,6 +14,11 @@ if  [ "1" = "$INPUT" ];  then
   wget -O package.json 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/simple/package.json'
   wget -O .jshintrc 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/simple/.jshintrc'
   echo "Done";
+if  [ "2" = "$INPUT" ];  then
+  wget -O gulpfile.js 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/storefront-child/gulpfile.js'
+  wget -O package.json 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/storefront-child/package.json'
+  wget -O .jshintrc 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/simple/.jshintrc'
+  echo "Done";  
 else
   echo "Abort! $INPUT doesn't exist.";
 fi
