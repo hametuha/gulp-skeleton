@@ -25,7 +25,7 @@
   },
   "homepage": "",
   "devDependencies": {
-    "bourbon": "^4.3.3",
+    "bourbon": "^4.2.6",
     "event-stream": "^3.3.4",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
