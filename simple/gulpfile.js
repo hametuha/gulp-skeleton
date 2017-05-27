@@ -107,7 +107,7 @@ gulp.task('watch', function () {
   // Make SASS
   gulp.watch(srcDir.scss, ['sass']);
   // Uglify all
-  gulp.watch(srcDir.jshint, ['js']);
+  gulp.watch(srcDir.jsHint, ['js']);
   // Minify Image
   gulp.watch(srcDir.img, ['imagemin']);
 });
