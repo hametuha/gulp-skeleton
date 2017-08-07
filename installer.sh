@@ -13,13 +13,17 @@ if  [ "1" = "$INPUT" ];  then
   wget -O gulpfile.js 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/simple/gulpfile.js'
   wget -O package.json 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/simple/package.json'
   wget -O .jshintrc 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/simple/.jshintrc'
+  mkdir -p src/{scss,js,img}
   echo "Done";
 elif  [ "2" = "$INPUT" ];  then
   wget -O gulpfile.js 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/storefront-child/gulpfile.js'
   wget -O package.json 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/storefront-child/package.json'
   wget -O .jshintrc 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/simple/.jshintrc'
-  mkdir -p src/scss
+  mkdir -p src/{scss,js,img}
   wget -O src/scss/style.scss 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/storefront-child/src/scss/style.scss'
+  wget -O package.json 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/storefront-child/functions.php'
+  wget -O package.json 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/storefront-child/style.css'
+  mkdir incluces
   echo "Done";  
 else
   echo "Abort! $INPUT doesn't exist.";

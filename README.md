@@ -56,9 +56,9 @@ Child theme for [Storefront](https://wordpress.org/themes/storefront/).
 
 Besides `simple`'s structure...
 
-- Libraries and images are copied to your assets folder
+- Libraries and images are copied to your assets folder.
 - SCSS include path are overrapped with Storefront.
-
+- All files in `includes` directory will be required automatically.
 
 ```
 YOUR_DIR
@@ -70,6 +70,10 @@ YOUR_DIR
 │  ├js
 │  └css
 │
+├style.css
+│
+├functions.php
+│
 ├gulpfile.js
 │
 ├package.json
@@ -79,7 +83,6 @@ YOUR_DIR
     ├js
     └scss
 ```
-
 
 ## License
 
