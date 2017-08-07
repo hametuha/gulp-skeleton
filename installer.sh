@@ -21,8 +21,8 @@ elif  [ "2" = "$INPUT" ];  then
   wget -O .jshintrc 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/simple/.jshintrc'
   mkdir -p src/{scss,js,img}
   wget -O src/scss/style.scss 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/storefront-child/src/scss/style.scss'
-  wget -O package.json 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/storefront-child/functions.php'
-  wget -O package.json 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/storefront-child/style.css'
+  wget -O functions.php 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/storefront-child/functions.php'
+  wget -O style.css 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/storefront-child/style.css'
   mkdir incluces
   echo "Done";  
 else
