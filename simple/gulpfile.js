@@ -12,11 +12,11 @@ var includesPaths = [
 // Source directory
 var srcDir = {
     scss: [
-        './src/scss/**/*.scss'
+        'src/scss/**/*.scss'
     ],
     js: [
-        './src/js/**/*.js',
-        '!./src/js/**/_*.js'
+        'src/js/**/*.js',
+        '!src/js/**/_*.js'
     ],
     jsHint: [
         './src/js/**/*.js'
@@ -25,7 +25,7 @@ var srcDir = {
         './.jshintrc'
     ],
     img: [
-        './src/img/**/*'
+        'src/img/**/*'
     ]
 
 };
