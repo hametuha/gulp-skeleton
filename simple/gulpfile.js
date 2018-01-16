@@ -64,7 +64,11 @@ gulp.task('jsconcat', function () {
       loadMaps: true
     }))
     .pipe($.include())
-    .pipe($.uglify())
+    .pipe($.uglify({ 
+        output:{
+          comments: /^!/
+        }
+      }))
     .on('error', $.util.log)
     .pipe($.sourcemaps.write('./map'))
     .pipe(gulp.dest(destDir.js));
