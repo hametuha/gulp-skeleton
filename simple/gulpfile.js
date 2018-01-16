@@ -60,6 +60,9 @@ gulp.task('sass', function () {
 // Minify All
 gulp.task('jsconcat', function () {
   return gulp.src(srcDir.js)
+    .pipe($.plumber({
+        errorHandler: $.notify.onError('<%= error.message %>')
+    }))
     .pipe($.sourcemaps.init({
       loadMaps: true
     }))
@@ -69,7 +72,6 @@ gulp.task('jsconcat', function () {
           comments: /^!/
         }
       }))
-    .on('error', $.util.log)
     .pipe($.sourcemaps.write('./map'))
     .pipe(gulp.dest(destDir.js));
 });

@@ -38,7 +38,6 @@
     "gulp-sass-bulk-import": "^1.0.1",
     "gulp-sourcemaps": "^2.4.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
     "imagemin-pngquant": "^5.0.0",
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1"
