@@ -32,7 +32,7 @@ elif  [ "3" = "$INPUT" ];  then
   FILES=( .gitignore .bablerc .eslintrc composer.json functions.php gulpfile.js package.json phpcs.xml.dist phpunit.xml.dist style.css )
   for i in "${FILES[@]}"
     do :
-      wget -O $i 'https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/esnext/$i'
+      wget -O $i "https://raw.githubusercontent.com/hametuha/gulp-skeleton/master/esnext/$i"
   done
   echo "Done";  
 else
