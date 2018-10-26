@@ -1,0 +1,29 @@
+{
+  "name": "foo/var",
+  "description": "Description.",
+  "type": "wordpress-theme",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "cs": [
+      "vendor/bin/phpcs --config-set installed_paths $(pwd)/vendor/wp-coding-standards/wpcs",
+      "vendor/bin/phpcs --standard=phpcs.ruleset.xml $(find ./app -name '*.php')",
+      "vendor/bin/phpcs --standard=phpcs.ruleset.xml functions.php"
+    ],
+    "test": "phpunit"
+  },
+  "authors": [
+    {
+      "name": "your name",
+      "email": "you@example.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8",
+    "squizlabs/php_codesniffer": "~2.8",
+    "wp-coding-standards/wpcs": "~0.11"
+  }
+}

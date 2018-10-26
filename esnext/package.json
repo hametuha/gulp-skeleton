@@ -1,0 +1,58 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "homepage": "https://github.comr/repo/name",
+  "description": "WordPress theme",
+  "main": "gulpfile.js",
+  "author": "your name.",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/repo/name.git"
+  },
+  "bugs": {
+    "url": "https://github.com/repo/name/issues"
+  },
+  "scripts": {
+    "start": "gulp build",
+    "watch": "gulp watch",
+    "gulp": "gulp",
+    "fix": "eslint --fix src/js",
+    "html": "gulp html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.24.4",
+    "eslint": "^5.6.1",
+    "eslint-config-wordpress": "^2.0.0",
+    "event-stream": "^4.0.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-imagemin": "^4.1",
+    "gulp-jshint": "^2.0",
+    "gulp-load-plugins": "^1.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0",
+    "gulp-sass-bulk-import": "^1.0",
+    "gulp-sourcemaps": "^2.6",
+    "gulp-uglify": "^3.0",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.12.1",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^4.20.2",
+    "webpack-stream": "^5.1.1"
+  },
+  "jest": {
+    "browser": true
+  }
+  }
+}
